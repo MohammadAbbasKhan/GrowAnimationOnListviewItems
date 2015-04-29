@@ -10,11 +10,13 @@ The animation uses an integer data member "delay" in ListView adapter MyAdapter 
 
 delay = AnimationUtils.currentAnimationTimeMillis(); 
 
-initially in the  and as the next times the getview() is called the delay value is increased by 100 milliseconds, this causes the dalay effect.
+For initial load the animation used is R.anim.grow_large
+
+initially and as the next times the getview() is called the delay value is increased by 100 milliseconds, this causes the dalay effect.
 
 We delay the animation using method anim.setStartTime(delay);
 
-To perform the Shrinking animation we use the ___ animation xml file and set this listener
+To perform the Shrinking animation we use the "R.anim.grow_small" animation xml file and set this listener
 
 anim.setAnimationListener(new Animation.AnimationListener() {
                     @Override
