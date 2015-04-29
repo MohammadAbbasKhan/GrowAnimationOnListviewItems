@@ -39,8 +39,10 @@ anim.setAnimationListener(new Animation.AnimationListener() {
 
                     }
                 });
+                
 We can see when the animation ends we try to 
 
 1)set the firstLoad=true which is the value by default and changes to false when any  button is clicked and then we initiate the shrinking animation
+
 2)Fire an intent to initiate the second activity
 
