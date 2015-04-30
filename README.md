@@ -6,15 +6,15 @@ This Project contains two Modules
 
 2)timercontrol - Containing a simple android.os.CountDownTimer sample (Just ignore this module)
 
-The animation uses an integer data member "delay" in ListView adapter MyAdapter that will have value 
+The animation uses an integer data member "systime" in ListView adapter MyAdapter that will have value 
 
-delay = AnimationUtils.currentAnimationTimeMillis(); 
+systime = AnimationUtils.currentAnimationTimeMillis(); 
 
 For initial load the animation used is R.anim.grow_large
 
-initially and as the next times the getview() is called the delay value is increased by 100 milliseconds, this causes the dalay effect.
+initially and as the next times the getview() is called the systime value is increased by 100 milliseconds, this causes the dalay effect.
 
-We delay the animation using method anim.setStartTime(delay);
+We delay the animation using method anim.setStartTime(systime);
 
 To perform the Shrinking animation we use the "R.anim.grow_small" animation xml file and set this listener
 
